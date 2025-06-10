@@ -16,49 +16,40 @@
 }
 
 body {
+  background-color: var(--background-color);
   margin: 0;
   font-family: var(--main-font);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-color);
   color: var(--text-color);
+  line-height: 1.6;
 }
 
-code {
-  font-family: var(--mono-font);
+.App-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-h1, h2, h3 {
+h1 {
   font-family: var(--display-font);
   font-weight: 400;
-  letter-spacing: 0.01em;
 }
 
-h4, h5, h6 {
-  font-family: var(--main-font);
-  font-weight: 600;
-  letter-spacing: -0.01em;
+h2, h3 {
+  font-family: var(--display-font);
+  font-weight: 400;
 }
 
 p {
-  font-family: var(--main-font);
   font-weight: 400;
   letter-spacing: 0.01em;
 }
 
-button, a {
-  font-family: var(--main-font);
+a, button {
   font-weight: 500;
 }
 
+/* Apply mono font to typing elements */
 .typing-title, .typing-text {
   font-family: var(--mono-font);
   letter-spacing: 0.03em;
 }
-
-.skill-tag {
-  font-family: var(--mono-font);
-  font-weight: 400;
-}
-
-
